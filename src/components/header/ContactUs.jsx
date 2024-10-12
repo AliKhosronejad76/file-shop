@@ -12,8 +12,8 @@ export default function ContactUs(){
 
 function Item({icon , text }){
     return(
-        <div className="flex items-center ">
-            <p className="text-gray-700 ml-2">
+        <div className="flex items-center justify-center gap-3 bg-white w-max px-3 h-[63px] rounded-2xl  transition duration-700 hover:shadow-2xl hover:translate-x-[3px]">
+            <p className="text-gray-700 text-sm">
                 {text}
             </p>
             <div className="rotate-45 p-1.5 bg-gray-200 rounded-lg text-gray-700">

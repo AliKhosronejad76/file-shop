@@ -1,7 +1,8 @@
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import "../font.css";
  
  
 // const geistMono = localFont({
@@ -20,9 +21,9 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl">
       <body>
        <Header/>
-       <div className="container px-3 py-3">
+      
           {children}
-       </div>
+       <Footer/>
       </body>
     </html>
   );

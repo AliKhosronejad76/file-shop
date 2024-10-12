@@ -14,7 +14,7 @@ export default function Menu(){
 
 function Item({href , title}){
     return(
-        <li className="bg-gray-200 rounded-lg text-sm w-[110px] h-[40px]">
+        <li className="bg-white rounded-lg text-sm w-[110px] h-[40px] transition duration-700 hover:shadow-2xl hover:translate-y-[-3px]">
             <Link href={href} className="rounded-lg block w-full h-full flex items-center justify-center ">
                 {title}
             </Link>

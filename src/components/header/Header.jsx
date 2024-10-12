@@ -8,9 +8,9 @@ import Actions from "./Actions";
 
 export default function Header(){
     return(
-        <header className="">         
+        <header className="mb-5 ">         
             <div className="flex px-3 justify-between py-4">
-                <div className="w-[13%]">
+                <div className="w-[13%] ">
                     <Logo/>
                 </div>
                 <div className="w-[65%]  flex flex-col justify-between">

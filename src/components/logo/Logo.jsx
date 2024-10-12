@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Logo(){
     return(
-        <div className="w-full rounded-xl shadow-2xl p-2 flex flex-col items-center">
+        <div className="bg-white mt-5 w-full rounded-xl transition duration-500 hover:shadow-2xl p-2 flex flex-col items-center">
             <Image 
                 src={"/img/logo.png"}
                 width={300}

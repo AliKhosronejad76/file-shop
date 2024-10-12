@@ -14,7 +14,7 @@ export default function Actions(){
 
 function UserButton(){
     return(
-        <button className="w-[50px] h-[50px] flex items-center justify-center bg-gray-500 rounded-md">
+        <button className="w-[50px] h-[50px] flex items-center justify-center bg-gray-500 rounded-md transition duration-500 hover:shadow-2xl">
           <FaUser className="w-[30px] h-[30px]  text-white "/>
          
         </button>
@@ -24,7 +24,7 @@ function UserButton(){
 
 function CardButton(){
     return(
-        <button className="w-[130px] bg-orange-500 h-[50px] flex items-center justify-between px-2 rounded-md">
+        <button className="w-[130px] bg-orange-500 h-[50px] flex items-center justify-between px-2 rounded-md transition duration-500 hover:shadow-2xl">
             <span className="w-[20px] h-[20px] bg-white text-orange-500 flex items-center justify-center rounded-full">0</span>
             <span className="text-sm">سبد خرید</span>
             <div className="w-[30px] h-[30px] bg-white text-orange-500  flex items-center justify-center rounded-sm flex items-center justify-center">

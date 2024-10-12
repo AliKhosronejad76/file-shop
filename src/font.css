@@ -1,0 +1,36 @@
+@font-face {
+    font-family: shabnam;
+    src: url("./app/fonts/shabnam/Shabnam-Bold.eot"),
+    url("./app/fonts/shabnam/Shabnam-Bold.woff"),
+    url("./app/fonts/shabnam/Shabnam-Bold.woff2")
+    ;
+
+
+}
+
+@font-face {
+    font-family: shabnamThin;
+    src: url("./app/fonts/shabnam/Shabnam-Thin.eot"),
+    url("./app/fonts/shabnam/Shabnam-Thin.woff"),
+    ;
+}
+
+@font-face {
+    font-family: shabnameLight;
+    src: url("./app/fonts/shabnam/Shabnam-Light.eot"),
+    url("./app/fonts/shabnam/Shabnam-Light.woff");
+    ;
+}
+
+@font-face {
+    font-family: shabnameMedium;
+    src: url("./app/fonts/shabnam/Shabnam-Bold.eot"),
+    url("./app/fonts/shabnam/Shabnam-Medium.woff")
+    ;
+}
+.shabnam{
+    font-family: shabnam;
+}
+.shabnameLight{
+    font-family: shabnameLight;
+}

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   /* --background: #ffffff;
   --foreground: #171717; */
@@ -12,4 +14,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.swiper-button-next,.swiper-button-prev{
+  color:#5f5c5c !important;
+}
 
+body{
+  font-family: 'shabnameLight' !important;
+  background-color: #e1e1e1;
+}

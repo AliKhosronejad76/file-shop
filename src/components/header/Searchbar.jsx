@@ -2,7 +2,7 @@ import { IoIosSearch } from "react-icons/io";
 
 export default function Searchbar(){
     return(
-        <div className="bg-gray-200 rounded-lg  ">
+        <div className="bg-white rounded-lg  transition duration-700 hover:routate-10 hover:shadow-2xl">
             <form
              className="flex w-full bg-transparent"
             >
