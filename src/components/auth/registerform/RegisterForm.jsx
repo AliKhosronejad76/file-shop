@@ -10,14 +10,22 @@ export default function Registerform(){
         formState:{errors},
         } = useForm({});
 
-    const   submitHandler = (e)=>{
+    const   formHandler = (e)=>{
         e.preventDefault();
-        alert("okkkkkk")
+        alert("okkkkkk");
+        const formData = {
+            username:watch("username"),
+            email:watch("email"),
+            password:watch("password"),
+            confirmpassword:watch("confirmpassword"),
+
+
+        };
     }
 
     return(
         <form 
-          onSubmit={handleSubmit(submitHandler)}
+          onSubmit={handleSubmit(formHandler)}
           
           >
             <div className="w-full my-4">

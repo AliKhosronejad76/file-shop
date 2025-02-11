@@ -1,18 +1,23 @@
-"use client";
-import SingleSlider from "../module/SingleSlider"
+"use clinet";
+import SingleSlider from "../module/SingleSlider";
 
 
-const data =[
-    {img:"http://www.coca.ir/wp-content/uploads/2017/02/nature-photos-1.jpg",href:"#"},
-    {img:"http://www.coca.ir/wp-content/uploads/2014/02/beautiful-winter-photos-5.jpg",href:"#"},
-    {img:"http://www.coca.ir/wp-content/uploads/2014/02/beautiful-winter-photos-11.jpg",href:"#"},
+const getData  = async()=>{
+    const res  = fetch("http://localhost:4000/api/main-slider",{cache:"no-store"});
+    const data = (await res).json()
+    return data;
+    
+   
+} 
 
-];
 
-export default function MiddleBanner(){
+export default async function MiddleBanner(){
+    const data = await getData();
+    console.log(data);
+
     return(
         <section className="w-full px-7">
-            <SingleSlider data={data}/>
+            <SingleSlider data={data.data}/>
         </section>
     )
 }

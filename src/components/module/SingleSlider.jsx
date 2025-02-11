@@ -1,3 +1,5 @@
+"use client";
+
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -27,12 +29,14 @@ export default function SingleSlider({data}){
             {
                 data.map((item, index)=>(
                     <SwiperSlide className="w-full h-full rounded-lg">
-                        <Link href={item.href} className="inline w-full h-full">
+                        <Link href={"/"} className="inline w-full h-full">
                             <Image
-                                src={item.img}
+                                src={item.image}
                                 width={1300}
                                 height={400}
-                                className="w-full h-full rounded-xl "
+                                objectFit=''
+                                layout=''
+                                className="object-fill w-full h-full rounded-xl bg-center"
                             />
                         </Link>
                     </SwiperSlide>

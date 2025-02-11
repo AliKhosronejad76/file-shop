@@ -4,12 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "../font.css";
  
- 
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -20,8 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body>
-       <Header/>
-      
+       <Header/>    
           {children}
        <Footer/>
       </body>
